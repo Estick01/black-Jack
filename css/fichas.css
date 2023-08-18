@@ -1,0 +1,71 @@
+#fichas{
+    display: flex;
+    box-sizing: border-box;
+    width: 600px;
+    margin: auto;
+    margin-top: 40px;
+}
+.dashed-circle { 
+	cursor: pointer;
+    margin-left: 20px;
+    position: relative;
+    display: block;
+    width: 6vh;
+    height: 6vh;
+    border: 13px dashed white;
+    border-radius: 50%;
+    line-height: 6vh;
+    text-align: center;
+    font-family: Helvetica;
+    color: white;
+    font-size: 2.5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+.dashed-circle:after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 5px;
+    border: 3px dashed white;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    content: '';
+  }
+.dashed-circle:before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -16px;
+    border-radius: 50%;
+    content: '';
+  }
+.movet:nth-child(1) .dashed-circle:before{
+    background: rgb(32, 110, 29);
+}
+.movet:nth-child(2) .dashed-circle:before{
+    background: rgb(114, 0, 0);
+}
+.movet:nth-child(3) .dashed-circle:before{
+    background: rgb(231, 209, 13);
+}
+.movet:nth-child(4) .dashed-circle:before{
+    background: rgb(21, 173, 233);
+}
+.movet:nth-child(5) .dashed-circle:before{
+    background: rgb(206, 11, 27);
+}  
+.movet:nth-child(6) .dashed-circle:before{
+    background: rgb(68, 68, 68);
+}
+.movet:hover{
+	transform: translate(-1px, -10px);
+	transition: transform 0.2s ease;
+	cursor: pointer;
+    border-radius: 50px;
+}

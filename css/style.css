@@ -1,0 +1,255 @@
+body{
+	margin: 0;
+	text-align: center;
+	color: aliceblue;
+	background-image: url('../fondo1.png');
+}
+#canvas {
+	background-color: cadetblue;
+	background-image: url('../fondoBJ.jpg');
+	background-size: cover;
+	height: 50vh;
+	width: 130vh;
+	margin: auto;
+	
+  }
+  #title {
+	text-align: center;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 2em;
+  }
+   
+  #botones {
+	margin: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+  }
+  
+  #datos {
+	text-align: center;
+	font-size: 1.2em;
+	margin: 20px;
+  }
+  
+  .button {
+	background-color: #06b3b9;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 10px;
+	cursor: pointer;
+  }
+  .button:hover{
+	background-color: #350505;
+	color: rgb(255, 242, 242);
+	transition:  0.2s ease;
+  }
+  #canvas {
+	border-radius: 10px;
+	
+  }
+  #reset {
+	background-color: #15bb1a;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	border-radius: 10px;
+	cursor: pointer;
+	visibility: hidden;
+	width: 150px;
+  }
+img{
+	border-radius: 10px;
+	margin: -35px;
+	border: 1px solid black;
+	width:14vh; 
+	height:21vh;
+	
+}
+
+img:hover{
+	box-shadow: 2px 8px 10px
+	rgb(0,0,0,0.5);
+	transform: translate(-1px, -6px);
+	transition: transform 0.2s ease;
+	user-select: none;
+	cursor: pointer;
+}
+.cartas{
+	display: flex;
+	position: fixed;
+	position: relative;
+	justify-content: space-evenly;
+	word-wrap: break-word;
+	
+}
+#carta{
+	display: block;
+	margin-top: 20vh;
+	position:relative;
+	margin-left: 30px;
+	transform: translate(20,20);
+}
+#carta2{
+	margin-top: 20vh;
+}
+
+.puntos{
+	display: flex;
+	padding-left:400px ;
+	padding-right:400px ;
+	align-items: center;
+	justify-content: space-evenly;
+	
+} 
+#jugador1 {
+	visibility: hidden;
+  }
+
+#jugador2 {
+	visibility: hidden;
+	}
+#iniciar{
+	visibility: visible;
+	}
+
+input{
+	width: 200px;
+	height: 30px;
+	font-size: 20px;
+	border-radius: 30px;
+	padding: 3px;
+	padding-left: 10px;
+}
+#apuesta{
+	text-align: center;
+	visibility: visible;
+}
+#doblar{
+	visibility: hidden;
+	position: absolute;
+}
+#apostado{
+	visibility: visible;
+	
+}
+
+.Dinero{
+	position: absolute;
+	margin-top: 1vh;
+	margin-left: 2vh;
+	height: 8vh;
+	width: 17vh;
+	background-color: rgb(83, 5, 5);
+	opacity: 0.70;
+	border-radius: 30px;
+	text-align: center;
+}
+h2{
+	font-size: 3vh;
+	margin: 2vh;
+}
+h1{
+	font-size: 3.5vh;
+}
+#apostando{
+	margin-left: 40px;
+	margin-top: -15px;
+	position: absolute;
+	margin-bottom: -30px;
+
+}
+.Dinero2{
+	position: absolute;
+	margin-top: 1vh;
+	margin-left: 20vh;
+	height: 8vh;
+	width: 19vh;
+	background-color: rgb(83, 5, 5);
+	opacity: 0.70;
+	border-radius: 30px;
+	text-align: center;
+}
+#dinero{
+	margin-top: -15px;
+	
+}
+#dinero1{
+	margin-top: 2px;
+	
+}
+.rojo{
+	color: red;
+}
+.negro{
+	color: black;
+
+}
+.Titulo{
+	margin-top: 4vh;
+	width: 40vh;
+	height: 8vh;
+	background-color: rgb(50, 51, 51);
+	opacity: 0.8;
+	border-radius: 30px;
+	margin: auto;
+}
+.tod{
+	margin: auto;
+}
+.modal {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.459);
+  }
+  
+  .modal-content {
+	width: 95%;
+	max-width: 500px;
+	padding: 20px;
+	position: relative;
+	background: rgb(0, 0, 0);
+	border-radius: 5px;
+	box-sizing: border-box;
+  }
+  
+  .modal-btn-closed {
+	position: absolute;
+	top: 5px;
+	right: 3px;
+	background: none;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	cursor: pointer;
+	color: beige;
+  }
+  .modal-desdeArriba {
+	animation: desdeArriba 1s;
+  }
+  
+  @keyframes desdeArriba {
+	from {
+	  transform: translateY(-50vh);
+	  opacity: 0;
+	}
+	to {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  }

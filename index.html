@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fichas.css">
+</head>
+<body onload="Canvas(),Dinero(),dinero">
+    <div class="tod">
+        <div id="title"> 
+            <div class="Titulo">
+                <h1>
+                    <span class="rojo">&hearts;</span><span class="negro">&spades;</span>
+                    BlackJack
+                    <span class="negro">&clubs;</span><span class="rojo">&diams;</span>
+                </h1>
+            </div>
+        </div>
+        <div id="canvas">
+            <div class="Dinero">
+                <h2 id="dinero1">Tu dinero</h2>
+                <h2 id="dinero"></h2>
+            </div>
+            <div class="Dinero2" >
+                <h2 id="dinero1">Tu apuesta</h2>
+                <h2 id="apostando"></h2>
+            </div>
+            <div class="cartas">
+                <h2 id="carta"></h2>
+                <h2 id="carta2"></h2>
+            </div>    
+        </div>
+        <div id="botones">
+            <button id="jugador1"onclick="Sacar_Carta()" value="1" class="button">Pedir carta</button>
+            <button id="iniciar" onclick="Sacar_Carta()" class="button">Iniciar</button>
+            <button id="doblar" onclick="Doblar()" class="button">Doblar</button>
+            <button id="jugador2" onclick="carta2()" value="2" class="button">Plantate</button>             
+        </div>
+        <div >
+            <div id="fichas">
+                <div class="movet"onclick="ficha1()"><div id="ficha1" class="dashed-circle">1</div></div>
+                <div class="movet"onclick="ficha2()"><div id="ficha2" class="dashed-circle">5</div></div>
+                <div class="movet"onclick="ficha3()"><div id="ficha3" class="dashed-circle">10</div></div>
+                <div class="movet"onclick="ficha4()"><div id="ficha4" class="dashed-circle">50</div></div>
+                <div class="movet"onclick="ficha5()"><div id="ficha5" class="dashed-circle">100</div></div>
+                <div class="movet"onclick="ficha6()"><div id="ficha6" class="dashed-circle">500</div></div>
+            </div>
+        </div>
+        <div class="puntos">
+            <div >
+                <h1>Puntos Jugador</h1>
+                <h2 id="puntos"></h2>
+            </div>
+            <div >
+                <button id="reset" onclick="Reinicio()" value="2" class="button">Jugar otra</button>
+            </div>
+            <div>
+                <h1>Puntos Croupier</h1>
+                <h2 id="puntos1"></h2>
+            </div>          
+        </div>
+        
+        <br>           
+            <div id="apuesta">
+                <button onclick="CrearDiner()" value="2" class="button">Meter Dinero</button>
+                <input id="d" type="number" placeholder="Dinero quieres meter">
+                <button onclick="EliminarDinero()" value="2" class="button">Eliminar Dinero</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal_container"></div>
+</body>
+<script src="./juego.js"></script>
+</html>
